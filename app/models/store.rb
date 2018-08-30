@@ -1,11 +1,10 @@
 class Store < ApplicationRecord
     has_many:lists, dependent: :destroy
     validates :name, presence: true
-    # validations
 
-    # associations
 
-    # callbacks
-
-    # instanc / class methods
+    def self.find_store_name(x)
+        where name = "x"
+    end
+  
 end
